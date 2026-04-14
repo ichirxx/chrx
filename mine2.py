@@ -1571,29 +1571,11 @@ def get_temp_email(fname, lname, domain_choice=None):
     if domain_choice == "1":
         domain = "lcxmail.site"
     elif domain_choice == "2":
-        domain = "ocd5.cybertemp.xyz"
+        domain = "cybertemp.xyz"
     elif domain_choice == "3":
-        domain = "p79y.cybertemp.xyz"
-    elif domain_choice == "4":
-        domain = "xgnn.cybertemp.xyz"
-    elif domain_choice == "5":
-        domain = "w4di.cybertemp.xyz"
-    elif domain_choice == "6":
-        domain = "ifrh.cybertemp.xyz"
-    elif domain_choice == "7":
-        domain = "qhnw.cybertemp.xyz"
-    elif domain_choice == "8":
-        domain = "bgaf.cybertemp.xyz"
-    elif domain_choice == "9":
-        domain = "pylc.cybertemp.xyz"
-    elif domain_choice == "10":
-        domain = "atoc.cybertemp.xyz"
-    elif domain_choice == "11":
-        domain = "mp5h.cybertemp.xyz"
-    elif domain_choice == "12":
-        domain = "37vl.cybertemp.xyz"
+        domain = "fruitservice.xyz"
     else:
-        domain = random.choice(['lcxmail.site', 'ocd5.cybertemp.xyz', 'p79y.cybertemp.xyz', 'xgnn.cybertemp.xyz', 'w4di.cybertemp.xyz', 'ifrh.cybertemp.xyz', 'qhnw.cybertemp.xyz', 'bgaf.cybertemp.xyz', 'pylc.cybertemp.xyz', 'atoc.cybertemp.xyz', 'mp5h.cybertemp.xyz', '37vl.cybertemp.xyz'])
+        domain = random.choice(['lcxmail.site', 'cybertemp.xyz', 'fruitservice.xyz'])
     return f"{prefix}@{domain}"
 def get_temp_code(email):
     try:
@@ -1865,24 +1847,15 @@ def main():
         clear(); logo()
         print(Panel(
             f"{O}  [1]{W}  lcxmail.site\n"
-            f"{O}  [2]{W}  ocd5.cybertemp.xyz\n"
-            f"{O}  [3]{W}  p79y.cybertemp.xyz\n"
-            f"{O}  [4]{W}  xgnn.cybertemp.xyz\n"
-            f"{O}  [5]{W}  w4di.cybertemp.xyz\n"
-            f"{O}  [6]{W}  ifrh.cybertemp.xyz\n"
-            f"{O}  [7]{W}  qhnw.cybertemp.xyz\n"
-            f"{O}  [8]{W}  bgaf.cybertemp.xyz\n"
-            f"{O}  [9]{W}  pylc.cybertemp.xyz\n"
-            f"{O}  [10]{W}  atoc.cybertemp.xyz\n"
-            f"{O}  [11]{W}  mp5h.cybertemp.xyz\n"
-            f"{O}  [12]{W}  37vl.cybertemp.xyz\n"
-            f"{O}  [13]{W}  Mixed  {GR}(random){W}\n"
+            f"{O}  [2]{W}  cybertemp.xyz\n"
+            f"{O}  [3]{W}  fruitservice.xyz\n"
+            f"{O}  [4]{W}  Mixed  {GR}(random){W}\n"
             f"{GR}  [b]{W}  Back",
             title=f"{R}[ EMAIL DOMAIN ]{W}",
             border_style="bold red",
             padding=(0, 2)
         ))
-        domain_choice = Prompt.ask(f"{O}[►]{W} Select", choices=["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "b"], default="13")
+        domain_choice = Prompt.ask(f"{O}[►]{W} Select", choices=["1", "2", "3", "4", "b"], default="4")
         if domain_choice == 'b': continue
         clear(); logo()
         print(Panel(
