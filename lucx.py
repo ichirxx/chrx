@@ -1774,14 +1774,14 @@ def generate_temp_email(use_custom_domain=False, custom_domain=None, first_name=
         
         # CRITICAL FIX: Handle domain-specific formatting
         if custom_domain == 'erine.email':
-            # For erine.email: format is (username).weyn@erine.email
-            return f"{username}.weyn@{custom_domain}"
-        elif custom_domain == 'weyn.store':
-            # For weyn.store: Simple format compatible with Facebook Lite and cloned apps
+            # For erine.email: format is (username).xyxron@erine.email
+            return f"{username}.xyxron@{custom_domain}"
+        elif custom_domain == 'harakirimail.com':
+            # For harakirimail.com: Simple format compatible with Facebook Lite and cloned apps
             # Using standard format for better email confirmation compatibility
             return f"{username}@{custom_domain}"
         else:
-            # For weyn.eml.monster and others: standard format
+            # For xyxron.eml.monster and others: standard format
             return f"{username}@{custom_domain}"
     else:
         # ANTI-CHECKPOINT: Carefully selected temporary email domains
@@ -1793,8 +1793,8 @@ def generate_temp_email(use_custom_domain=False, custom_domain=None, first_name=
             'tmpmail.net',
             '10mail.org',
             'emailnax.com',
-            'mailto.plus',
-            'temp-mail.io',
+            'yopmail.com',
+            'harakirimail.com',
             'moakt.com',
             'tempmail.dev',
             'emlhub.com',
@@ -1845,7 +1845,7 @@ def clear_screen():
     os.system('clear' if os.name == 'posix' else 'cls')
 
 def show_banner():
-    """Display WEYN banner"""
+    """Display XYXRON banner"""
     print(f"""
 {Colors.PURPLE}╔══════════════════════════════════════════════════════════╗
 ║  {Colors.BLUE}██╗    ██╗{Colors.PURPLE}███████╗{Colors.BLUE}██╗   ██╗{Colors.PURPLE}███╗   ██╗                {Colors.PURPLE}║
@@ -1856,7 +1856,7 @@ def show_banner():
 ║  {Colors.BLUE} ╚══╝╚══╝ {Colors.PURPLE}╚══════╝{Colors.BLUE}  ╚═╝   {Colors.PURPLE}╚═╝  ╚═══╝                {Colors.PURPLE}║
 ║                                                          ║
 ║          {Colors.CYAN}FACEBOOK ACCOUNT CREATOR - PRO VERSION{Colors.PURPLE}          ║
-║              {Colors.GREEN}BY: WEYN DUMP • PAID TOOL{Colors.PURPLE}                   ║
+║              {Colors.GREEN}BY: XYXRON DUMP • PAID TOOL{Colors.PURPLE}                   ║
 ╚══════════════════════════════════════════════════════════╝{Colors.RESET}
 """)
     print(f'{Colors.BLUE}{"=" * 60}{Colors.RESET}')
@@ -2014,10 +2014,10 @@ while True:
             clear_screen()
             show_banner()
             print('\n🖕 Email Domain Option:')
-            print('    1. Temporary Email Domains (cybertemp, tmpmail, etc.)')
-            print('    2. Custom Domain: weyn.eml.monster')
+            print('    1. Temporary Email Domains (cybertemp, yopmail, etc.)')
+            print('    2. Custom Domain: xyxron.eml.monster')
             print('    3. Custom Domain: erine.email')
-            print('    4. Custom Domain: weyn.store')
+            print('    4. Custom Domain: harakirimail')
             email_choice = input('🖕 Enter your choice (1-4): ').strip().upper()
 
             if email_choice == 'B':
@@ -2028,15 +2028,15 @@ while True:
 
             if email_choice == '2':
                 use_custom_domain = True
-                custom_domain = 'weyn.eml.monster'
-                print(f'{Colors.GREEN}✓ Using custom domain: @weyn.eml.monster{Colors.RESET}')
+                custom_domain = 'xyxron.eml.monster'
+                print(f'{Colors.GREEN}✓ Using custom domain: @xyxron.eml.monster{Colors.RESET}')
             elif email_choice == '3':
                 use_custom_domain = True
                 custom_domain = 'erine.email'
                 print(f'{Colors.GREEN}✓ Using custom domain: (anycharacter).weyn@erine.email{Colors.RESET}')
             elif email_choice == '4':
                 use_custom_domain = True
-                custom_domain = 'weyn.store'
+                custom_domain = 'harakirimail.com'
                 print(f'{Colors.GREEN}✓ Using custom domain: @weyn.store{Colors.RESET}')
             elif email_choice == '1':
                 print(f'{Colors.GREEN}✓ Using temporary email domains{Colors.RESET}')
