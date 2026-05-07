@@ -1100,8 +1100,8 @@ def get_pass():
 # ====================== EMAIL DOMAIN SELECTION ======================
 EMAIL_DOMAIN = "1secmail.com"
 DOMAIN_PASSWORD_VERIFIED = False
-CUSTOM_DOMAINS = ["weyn.store", "jhames.shop", "jakulan.site"]
-DOMAIN_PASSWORD = "yuennix"
+CUSTOM_DOMAINS = ["harakirimail.com", "ygmail.cfd", "yopmail.com"]
+DOMAIN_PASSWORD = "0000"
 
 def generate_natural_email(firstname, lastname, domain):
     """Generate a natural-looking email based on the account's real name."""
@@ -1231,21 +1231,21 @@ def choose_email_domain():
             clear_screen()
             banner()
             print(f"{W}[{G}1{W}]{G} 1secmail       {G}(API - auto generate)")
-            print(f"{W}[{G}2{W}]{G} weyn.store     {R}(domain password required)")
-            print(f"{W}[{G}3{W}]{G} jhames.shop    {R}(domain password required)")
-            print(f"{W}[{G}4{W}]{G} jakulan.site   {R}(domain password required)")
+            print(f"{W}[{G}2{W}]{G} harakirimail.com     {R}(domain password required)")
+            print(f"{W}[{G}3{W}]{G} ygmail.cfd    {R}(domain password required)")
+            print(f"{W}[{G}4{W}]{G} yopmail.com   {R}(domain password required)")
             linex()
             choice = input(f"{W}[{G}•{W}]{G} Choose Email Domain {W}:{G} ").strip()
             if choice.lower() == 'b':
                 return
             if choice == "2":
-                selected = "weyn.store"
+                selected = "harakirimail.com"
                 step = 2
             elif choice == "3":
-                selected = "jhames.shop"
+                selected = "ygmail.cfd"
                 step = 2
             elif choice == "4":
-                selected = "jakulan.site"
+                selected = "yopmail.com"
                 step = 2
             else:
                 EMAIL_DOMAIN = "1secmail.com"
@@ -1648,20 +1648,20 @@ def createfb_method_1():
             clear_screen()
             banner()
             print(f"{W}[{G}1{W}]{G} 1secmail       {G}(API - auto generate)")
-            print(f"{W}[{G}2{W}]{G} weyn.store     {R}(domain password required)")
-            print(f"{W}[{G}3{W}]{G} jhames.shop    {R}(domain password required)")
-            print(f"{W}[{G}4{W}]{G} jakulan.site   {R}(domain password required)")
+            print(f"{W}[{G}2{W}]{G} harakirimail.com     {R}(domain password required)")
+            print(f"{W}[{G}3{W}]{G} ygmail.cfd    {R}(domain password required)")
+            print(f"{W}[{G}4{W}]{G} yopmail.com   {R}(domain password required)")
             linex()
             v = input(f"{W}[{G}•{W}]{G} EMAIL DOMAIN {W}:{G} ").strip()
             if v.lower() == 'b':
                 step = 1
                 continue
             if v == '2':
-                chosen_domain = "weyn.store"
+                chosen_domain = "harakirimail.com"
             elif v == '3':
-                chosen_domain = "jhames.shop"
+                chosen_domain = "ygmail.cfd"
             elif v == '4':
-                chosen_domain = "jakulan.site"
+                chosen_domain = "yopmail.com"
             else:
                 EMAIL_DOMAIN = "1secmail.com"
                 step = 3
